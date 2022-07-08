@@ -115,7 +115,7 @@ def create_vectorlabel_dataset(data,process_data_path):
 #     return vec_frame,case_label_num,label_num
 
 
-def get_dataset(content_size=300):
+def get_dataset(content_size=300,data_path = './input/test.json'):
     train_rate=1
     print(train_rate,content_size)
     RANDOM_SEED = 42
@@ -124,7 +124,7 @@ def get_dataset(content_size=300):
     if not os.path.exists(process_data_path):
         os.mkdir(process_data_path)
 
-    raw_data=json.load(open('./input/train.json', encoding='utf-8'))
+    raw_data=json.load(open(data_path, encoding='utf-8'))
 
     '''
     train_frame:[id,label,text]

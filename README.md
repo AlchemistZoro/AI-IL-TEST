@@ -11,6 +11,6 @@
 5. 安装依赖```pip install -r requirements.txt``
 6. 运行程序：
 ```
-python main.py --train_batch 32 --valid_batch 64 --model_path hfl/chinese-roberta-wwm-ext --learning_rate 2e-5 --train_rate 0.9 --content_size 300 --epoch_number 20 --freeze --pn_rate 0 --time_limit 500 
+python main.py --train_batch 32 --valid_batch 64 --model_path hfl/chinese-roberta-wwm-ext --train_rate 0.8 --content_size 300 --input_dir ./input/test.json
 ```
 
