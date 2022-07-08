@@ -150,7 +150,7 @@ parser.add_argument('--f1_save_limit', default=0.3,type=float)
 parser.add_argument('--loss', default='MCE')
 parser.add_argument('--optm', default='Adam')
 
-parser.add_argument('--input_dir', default='./input/train.json')
+parser.add_argument('--input_dir', default='./input/test.json')
 parser.add_argument('--output_dir', default='./output/answer.json')
 args = parser.parse_args()
 
